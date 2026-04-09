@@ -1,0 +1,144 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>HashScout - Landing Page</title>
+	    <style>
+	        :root {
+	            --primary-color: #1a202c;
+	            --accent-color: #4299e1;
+	            --bg-color: #f7fafc;
+	            --text-color: #2d3748;
+	            --card-bg: #ffffff;
+	        }
+	        body {
+	            font-family: 'MilliardBold', system-ui, -apple-system, sans-serif;
+	            margin: 0;
+	            padding: 0;
+	            background-color: var(--bg-color);
+	            color: var(--text-color);
+	            line-height: 1.6;
+	        }
+	        nav {
+	            display: flex;
+	            justify-content: space-between;
+	            align-items: center;
+	            padding: 1rem 5%;
+	            background-color: var(--primary-color);
+	            color: white;
+	        }
+	        nav .logo {
+	            font-size: 1.5rem;
+	            font-weight: bold;
+	        }
+	        nav ul {
+	            list-style: none;
+	            display: flex;
+	            gap: 1.5rem;
+	            margin: 0;
+	            padding: 0;
+	        }
+	        nav a {
+	            color: white;
+	            text-decoration: none;
+	            transition: color 0.3s;
+	        }
+	        nav a:hover {
+	            color: var(--accent-color);
+	        }
+	        .hero {
+	            text-align: center;
+	            padding: 6rem 2rem;
+	            background: linear-gradient(135deg, var(--primary-color) 0%, #2a4365 100%);
+	            color: white;
+	        }
+	        .hero h1 {
+	            font-size: 3rem;
+	            margin-bottom: 1rem;
+	        }
+	        .hero p {
+	            font-size: 1.25rem;
+	            max-width: 600px;
+	            margin: 0 auto 2rem;
+	        }
+	        .btn {
+	            display: inline-block;
+	            padding: 0.75rem 1.5rem;
+	            background-color: var(--accent-color);
+	            color: white;
+	            text-decoration: none;
+	            border-radius: 5px;
+	            font-weight: bold;
+	            transition: background 0.3s;
+	        }
+	        .btn:hover {
+	            background-color: #3182ce;
+	        }
+	        .features {
+	            padding: 4rem 5%;
+	            display: grid;
+	            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	            gap: 2rem;
+	        }
+	        .feature-card {
+	            background: var(--card-bg);
+	            padding: 2rem;
+	            border-radius: 8px;
+	            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+	            text-align: center;
+	        }
+	        .feature-card h3 {
+	            color: var(--primary-color);
+	        }
+	        footer {
+	            background-color: var(--primary-color);
+	            color: white;
+	            text-align: center;
+	            padding: 2rem 5%;
+	            margin-top: 2rem;
+	        }
+	        footer a {
+	            color: var(--accent-color);
+	            text-decoration: none;
+	        }
+	    </style>
+	</head>
+	<body>
+	    <nav>
+	        <div class="logo">HashScout</div>
+	        <ul>
+	            <li><a href="#features">Features</a></li>
+	            <li><a href="#contact">Contact</a></li>
+	            <li>Appearance settings</li>
+	        </ul>
+	    </nav>
+	    <section class="hero">
+	        <h1>Welcome to HashScout</h1>
+	        <p>The truth comes out when you’re true to yourself, so StayTrue and AlwaysBeHappy! Empowering your scouting and tracking needs.</p>
+	        <a href="#features" class="btn">Explore Features</a>
+	    </section>
+	    <section id="features" class="features">
+	        <div class="feature-card">
+	            <h3>Simple Design</h3>
+	            <p>Clean and straightforward interface, ensuring optimal user experience and fast loading times.</p>
+	        </div>
+	        <div class="feature-card">
+	            <h3>Markdown Content</h3>
+	            <p>Support for Markdown allows for easy, structured content creation and seamless updates.</p>
+	        </div>
+	        <div class="feature-card">
+	            <h3>Tags & Tracking</h3>
+	            <p>Advanced tags support with powerful keyword tracking and competitor analysis capabilities.</p>
+	        </div>
+	        <div class="feature-card">
+	            <h3>SCSS Variables</h3>
+	            <p>Highly customizable styling using CSS variables and SCSS, making theme adjustments effortless.</p>
+	        </div>
+	    </section>
+	    <footer id="contact">
+	        <p>Contact us: <a href="mailto:Contact@HashScout.com">Contact@HashScout.com</a> | 1.800.763.3097</p>
+	        <p>© 2026 HashScout. All rights reserved.</p>
+	    </footer>
+	</body>
+	</html>
